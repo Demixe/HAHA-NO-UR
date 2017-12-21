@@ -92,12 +92,12 @@ def _parse_argument(arg: str) -> tuple:
     """
     arg = arg.lower()
 
-    # Check for names
+    # Check for names/surnames
     for full_name in IDOL_NAMES:
-        name_split = full_name.split(' ')
+        name_split,surname_split = full_name.split(' ')
 
-        # Check if name is exact match
-        if arg.title() == name_split[-1]:
+        # Check if name/surname is exact match
+        if arg.title() == name_split or surname_split:
             return 'name', full_name
 
     # Check for unit and idol names by alias
