@@ -1,19 +1,5 @@
-**2017-12-19:**:
-:wave: Hello, so I know I've been inactive lately, but I have done a bit of work behind the scenes. Here is an updated changelog <https://github.com/DamourYouKnow/HAHA-NO-UR/blob/master/CHANGELOG.md>
+This is the info displayed when using the "info" command
+This is just a test
+Have a good day
 
-!stats and !botstats is a new work in progress command.
-
-
-Invite me to your server here: <https://discordapp.com/oauth2/authorize?client_id=311284054333063168&scope=bot&permissions=0>
-
-
-Instructions for how to use the bot can be found here:
-<https://github.com/DamourYouKnow/HAHA-NO-UR/blob/master/README.md>
-
-
-If you have any suggestions for new features or improvements contact D'Amour#2601 on discord or submit a request on our dev channel or on github:
-https://discord.gg/aEkzE59
-<https://github.com/DamourYouKnow/HAHA-NO-UR/issues>
-
-
-Feel free to add this bot to your own server or host your own version of it. If you are interested in contributing to the bot please contact me. I'm willing to teach so don't worry about not having any programming experience.
+:eggplant:
