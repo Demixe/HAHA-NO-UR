@@ -29,7 +29,8 @@ ALIASES = {
         'a-rise': 'A-RISE',
         'arise': 'A-RISE',
         'saint': 'Saint Snow',
-        'snow': 'Saint Snow'
+        'snow': 'Saint Snow',
+        'kazuno': 'Saint Snow'
     },
     'sub_unit': {
         'lily': 'Lily White',
@@ -92,24 +93,20 @@ def _parse_argument(arg: str) -> tuple:
     """
     arg = arg.lower()
 
-    # Check for names/surnames
-    for full_name in IDOL_NAMES:
-        name_split = full_name.split(' ')
-
-        # Check if name is exact match
-        if arg.title() == name_split[-1]:
-            return 'name', full_name
-
-        # Check if surname is exact match
-        name_split.reverse()
-        if arg.title() == name_split[-1]:
-            return 'name', full_name
-
     # Check for unit and idol names by alias
     for key, val in ALIASES.items():
         search_result = val.get(arg, None)
         if search_result:
             return key, search_result
+
+    # Check for names/surnames
+    for full_name in IDOL_NAMES:
+        name_split = full_name.split(' ')
+
+        # Check if name is exact match
+        if arg.title() in name_split:
+            print(full_name)
+            return 'name', full_name
 
     # Check for years
     if arg in ('first', 'second', 'third'):
