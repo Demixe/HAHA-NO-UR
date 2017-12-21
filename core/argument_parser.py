@@ -105,7 +105,6 @@ def _parse_argument(arg: str) -> tuple:
 
         # Check if name is exact match
         if arg.title() in name_split:
-            print(full_name)
             return 'name', full_name
 
     # Check for years
