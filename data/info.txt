@@ -1,5 +1,3 @@
 This is the info displayed when using the "info" command
 This is just a test
 Have a good day
-
-:eggplant:
